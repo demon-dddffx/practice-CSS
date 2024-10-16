@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* div中的第一个文字 */
+        div::first-letter {
+            color: red;
+            font-size: 80px;
+        }
+
+        /* div中的第一行 */
+        div::first-line {
+            background-color: yellow;
+        }
+
+        /* 选择的是div中被鼠标选择的文字 */
+        div::selection {
+            background-color: green;
+            color: orange
+        }
+
+        /* input中的提示文字 */
+        input::placeholder {
+            color: aqua
+        }
+        /* 选中的是p元素前的内容 ，随后创建一个子元素 */
+        p::before { 
+            content: "￥";
+        }
+
+         /* 选中的是p元素后的内容 ，随后创建一个子元素 */
+        p::after { 
+            content: ".00";
+        }
+    </style>
+</head>
+
+<body>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio commodi rerum placeat similique
+        exercitationem est animi sit, inventore, nulla obcaecati mollitia natus porro consequatur veniam. Minima nihil
+        eaque ullam, magnam laborum nam omnis porro dolore minus, debitis cum sed odit excepturi ut similique
+        voluptatibus veniam, consequatur praesentium tenetur inventore corporis asperiores? Quasi eius, dolores
+        perspiciatis corrupti adipisci blanditiis accusantium.</div>
+    <input type="text" placeholder="请输入">
+    <p>156</p>
+    <p>4356</p>
+</body>
+
+</html>

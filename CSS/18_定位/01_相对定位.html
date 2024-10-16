@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .outer { 
+            width: 500px;
+            background-color: skyblue;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .box { 
+            width: 200px;
+            height: 200px;
+        }
+        .box1 { 
+            background-color: #888;
+            position: relative;
+            left: 90px;
+        }
+        .box2 { 
+            background-color: green;
+            position: relative;
+            left: 100px;
+            /* right:100px 左右只有左生效 */
+        }
+        .box3{ 
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<!-- 开启相对定位你并没有脱离文档流 
+    开启定位 层级就高一点
+    都开定位 后来者居上
+    1.对元素进行微调
+    2.配合绝对定位-->
+
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+
+</html>

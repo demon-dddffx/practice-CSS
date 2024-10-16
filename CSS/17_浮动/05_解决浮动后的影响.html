@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .outer{
+            width: 600px;
+            border: 1px solid black;
+            background-color: gray;
+        
+        }
+        .box { 
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            border:2px solid black;
+            margin: 5px;
+        
+        }
+        .box1,.box2,.box3 { 
+            float: left;
+        }
+        .box4 { 
+            /* display: inline-block; */
+            /* 像内联元素一样在同一行显示，但同时保留了块级元素的特性（如设置宽度和高度） */
+            /* clear 自身不浮动 不能是行内元素inline */
+            clear: both;
+        }
+        .mofa { 
+            /* 第四种解决方案 */
+            clear: both;
+        }
+        .outer::after{ 
+            content:'';
+            /* 默认是inline */
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="mofa"></div>
+        <!-- <div style="background-color: orange;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, tempora illum voluptatem eum rerum nisi. Nisi quas esse similique repellat nemo ratione nostrum maxime, accusamus ex libero quidem, vitae tempora laboriosam iste velit repudiandae possimus. Doloribus autem consectetur quod ipsa quo nesciunt iste, aut voluptatibus esse, nam debitis sint eligendi quae mollitia est aliquam adipisci dolores at, magnam nisi quos rerum voluptatum. Recusandae veritatis, minima modi repudiandae maxime, perspiciatis distinctio ducimus ex consectetur molestias sed dolorum eligendi ipsam. Corrupti vitae atque aperiam doloribus, expedita quis unde cupiditate, nesciunt at reiciendis pariatur molestiae saepe delectus quae praesentium officia asperiores aliquam. Harum amet sequi molestiae tenetur recusandae numquam non. Dolore voluptate quasi unde vero debitis reprehenderit maxime, quam iusto repellendus doloribus accusamus deserunt rem. Provident blanditiis debitis dolores magnam nulla esse quod, beatae rem dolore molestias, corrupti ratione reprehenderit necessitatibus fugit veniam magni omnis non ab earum. Adipisci doloremque voluptatum amet accusamus enim minus, dolores culpa tempore, numquam quibusdam quia sint est ipsa cum ea delectus quis quas distinctio dicta beatae laborum non eum? Harum expedita asperiores nobis quas.</div> -->
+    </div>
+</body>
+</html>

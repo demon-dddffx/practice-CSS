@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 500px;
+            background-color: skyblue;
+            border: 1px solid black;
+            padding: 20px;
+            position: relative;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background-color: #888;
+        }
+
+        .box2 {
+            background-color: green;
+            position: absolute;
+            top: 0px;
+            /* 开top 和 left 才可以margin */
+            /* 不能用浮动一起 */
+            /* margin-top: 90px; */
+        }
+
+        .box3 {
+            background-color: yellow;
+        }
+        .outer:hover .box2 { 
+            left: 220px;
+            
+        }
+    </style>
+</head>
+
+<!-- 父元素有相对定位，就参考父元素，父元素没有相对定位，就再往上找。直到根元素都没有相对定位，就参考浏览器窗口 
+ span 经过绝对定位 可以设置宽与高-->
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+
+</html>

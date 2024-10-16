@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .d1 { 
+            width: 400px;
+            height: 400px;
+            background-color: blueviolet;
+            overflow: hidden;
+        }
+        .d2{ 
+            width: 100px;
+            height: 100px;
+            margin-top: 60px;
+            background-color: brown;
+        }
+        .d3 { 
+            width: 100px;
+            height: 100px;
+            margin-bottom: 60px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 第一个子元素的上margin会作用到父元素，
+         第二个子元素的下margin会作用到父元素 -->
+    <div class="d1">
+        <div class="d2">1</div>
+        <div class="d3">2</div>
+    </div>
+    <div>123123</div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* link visited (a独有前两种) hover active 顺序*/
+        a:link {
+            color: chocolate;
+        } 
+
+        /* 选中访问过的a */
+        a:visited {
+            color: gray
+        }
+        /* 选中的是鼠标悬浮状态a元素 */
+        a:hover { 
+            color: red;
+        }
+        /* 选中的是a元素活跃状态 */
+        a:active { 
+            color: green;
+        }
+        span:hover { 
+            color: tan;
+        }
+        /* input select 输入类的可以用 获取焦点  有焦点才能用样式 */
+        input:focus { 
+            color : blue;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.baidu.com">去百度</a>
+    <a href="https://www.jd.com">去京东</a>
+    <span>尚硅谷</span>
+    <br>
+    <input type="text" >
+</body>
+
+</html>

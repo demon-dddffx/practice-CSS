@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .outer { 
+            background-color: gray;
+            width: 600px;
+            height: 400px;
+            position:relative;
+        }
+        .inner { 
+            width: 400px;
+            height: 100px;
+            background-color: orange;
+            font-size: 20px;
+            position:absolute;
+            /* 水平居中 */
+
+            /* 方案一 */
+            /* top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto; */
+
+            /* 方案二
+            left: 50%;
+            top: 50%;
+            margin-left: -200px;
+            margin-top: -50px; */
+        }
+    </style>
+</head>
+
+<!-- 让定位元素的宽充满包含块
+ left ruight为0
+ 让定位元素的高充满包含块
+ top bottom为0
+-->
+
+<!-- 上下左右为0  maring:auto  定位元素设置宽高  -->
+
+<body>
+    <div class="outer">
+        <div class="inner">inner</div>
+    </div>
+</body>
+
+</html>

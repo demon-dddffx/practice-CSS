@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 紧紧相邻的兄弟p元素  睡在下铺的兄弟 */
+        /* div+p{ 
+            color: red;
+        } */
+
+
+        /* 所有div后面的p元素  睡在下铺的所有兄弟*/
+        div~p {
+            color: blue;
+        }
+
+        li+li {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div>尚硅谷</div>
+    <p>前端</p>
+    <p>JavA</p>
+    <p>大数据</p>
+    <p>UI</p>
+    <ul>
+        <li>主页</li>
+        <li>秒杀</li>
+        <li>订单</li>
+        <li>我的</li>
+    </ul>
+</body>
+
+</html>

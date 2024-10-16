@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        /*从1开始。  2n选偶数 n从0开始
+        an+b的形式 */
+        /* 所有兄弟中继续 */
+        div>p:first-child {
+            color: yellow;
+        }
+        div>p:last-child {
+            color: red;
+        }
+        /* div>p:nth-child(3) { 
+            color: red;
+        } */
+        div>p:nth-child(-n+5) {
+            color: red;
+        }
+/* 是所有同类型的兄弟计算 */
+        /* 第一个这样p类型的 */
+        div>p:first-of-type {
+            color: yellow;
+        }
+        div>p:last-of-type {
+            color: blue;
+        }
+        /* 选中第三个p */
+        div>p:nth-of-type(3) {
+            color: green
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>第1个</p>
+        <p>第2个</p>
+        <p>第3个</p>
+        <p>第4个</p>
+        <p>第5个</p>
+        <p>第6个</p>
+        <p>第7个</p>
+        <p>第8个</p>
+        <p>第9个</p>
+        <p>第10个</p>
+    </div>
+
+    <div>
+        <span>asdas</span>
+        <p>撒旦撒</p>
+        <p>多说点</p>
+        <p>大声道</p>
+    </div>
+</body>
+
+</html>

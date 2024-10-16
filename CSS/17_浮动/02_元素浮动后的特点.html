@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .outer{ 
+            width: 800px;
+            height: 400px;
+            padding: 10px;
+            background-color: gray;
+        }
+        .box { 
+            font-size: 20px;
+            padding: 10px;
+        }
+        .box1 { 
+            background-color: skyblue;
+        }
+        .box2 { 
+            /* 背景色改成透明 就是 盒子三的颜色  脱离文档流 */
+            background-color: orange;
+            float: left;
+            /* 文字不重叠 飘在上面 */
+            /* width: 200px;
+            height: 200px; */
+            /* margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px; */
+        }
+        .box3 { 
+            background-color: purple;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 元素浮动后 宽高被内容撑开 -->
+    <div class="outer"> 
+        <div class="box box1">盒子1</div>
+        <div class="box box2">盒子2</div>
+        <div class="box box3">盒子3</div>
+    </div>
+</body>
+
+</html>

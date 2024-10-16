@@ -1,0 +1,121 @@
+/* 基础设置 */
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/* #region顶部导航条start */
+.topbar {
+    height: 30px;
+    background-color: #ECECEC;
+}
+
+.welcome {
+    height: 30px;
+    line-height: 30px;
+}
+
+.welcome {
+    font-size: 0px;
+}
+
+.welcome span,
+.welcome a {
+    font-size: 12px;
+}
+
+.welcome .hello {
+    margin-right: 28px;
+}
+
+.welcome .login {
+    padding-right: 10px;
+    border-right: 1px #666 solid;
+}
+
+.welcome .register {
+    padding-left: 10px;
+}
+
+.topbar-nav .list {
+    height: 30px;
+    line-height: 30px;
+}
+
+.topbar-nav .list li {
+    float: left;
+
+}
+
+.topbar-nav .list li a {
+    border-right: 1px #666 solid;
+    padding: 0 15px;
+}
+
+.topbar-nav .list li:first-child a {
+    padding-left: 0px;
+}
+
+.topbar-nav .list li:last-child a {
+    border: 0;
+    padding-right: 0;
+}
+
+/* #endregion顶部导航条end */
+
+/* #region 头部 start */
+.header {
+    height: 120px;
+    background-color: skyblue;
+}
+
+.header .search form {
+    margin-top: 42px;
+    font-size: 0;
+}
+
+.header .search input {
+    width: 508px;
+    height: 34px;
+    border: 1px solid #DD302D;
+}
+
+.header .search button {
+    width: 80px;
+    height: 36px;
+    background-color: #DD302D;
+    /* 垂直居中 */
+    vertical-align: top;
+    background-image: url('../images/serch_icon.png');
+    background-repeat: no-repeat;
+    background-position: 28px 6px;
+
+}
+
+/* #endregion 头部 end */
+
+/* #region  主导航区 start*/
+.main-nav {
+    height: 48px;
+}
+.main-nav .all-types {
+    width: 190px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #DD302D;
+    font-size: 16px;
+    color: #FFF;
+}
+.main-nav .nav-list {
+    line-height: 48px;
+}
+.main-nav .nav-list li {
+    float: left;
+    margin: 0 10px;
+    color: #333333;
+    font-size: 16px;
+}
+/* #endregion 主导航区 end */
+
+
+

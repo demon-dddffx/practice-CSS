@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 500px;
+            background-color: skyblue;
+            border: 1px solid black;
+            padding: 20px;
+            position:relative;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background-color: #888;
+
+        }
+
+        .box2 {
+            background-color: green;
+            position: relative;
+            left: 50px;
+            top: -150px;
+        }
+
+        .box3 {
+            background-color: yellow;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            
+        }
+
+        .box4 {
+            background-color: red;
+            position:fixed;
+            top: 200px;
+            left:100px
+        }
+    </style>
+</head>
+
+<!-- z-index 设置 谁先后在谁，默认是0，值越大，越在上面
+  fixed 固定定位
+    包含块低就不行 比如父元素 -->
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+</body>
+
+</html>

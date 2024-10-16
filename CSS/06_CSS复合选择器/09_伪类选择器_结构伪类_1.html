@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* last-child */
+        
+        /* 选中的是div的第一个儿子p 元素 */
+        div>p:first-child {
+            color: red;
+        }
+
+        div>p:first-child {
+            color: yellow;
+        }
+        
+        div p:first-child { 
+        color: yellow;
+     }
+
+
+        /* p父亲是谁无所谓，但得是 第一个儿子 */
+        p:first-child {
+            color: yellow;
+        }
+
+        /* 结构三 */
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>张三:98分</p>
+        <p>李四:88分</p>
+        <p>王五:78分</p>
+        <p>赵六:68分</p>
+    </div>
+</body>
+
+</html>
